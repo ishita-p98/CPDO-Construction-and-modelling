@@ -26,6 +26,9 @@ For validation, we’ve observed that calibration on historical data alone can p
 
 Overall, the model is now functioning properly, and we’re focusing on ensuring that the assumptions are well-justified and that the results reflect realistic credit risk dynamics.
 
+default intensirty based in exponential distribution
+simulate based on distribution whose parameters depend on the spread
+
 
 
                  ┌──────────────────────┐
@@ -64,7 +67,7 @@ Overall, the model is now functioning properly, and we’re focusing on ensuring
 
             ┌────────────────────────────┐
             │        NAV UPDATE          │
-            │ NAV(t+1) = All Cash Flows │
+            │ NAV(t+1) = All Cash Flows  │ 
             └──────────┬─────────────────┘
                        │
         ┌──────────────┼──────────────┐
@@ -97,3 +100,8 @@ Overall, the model is now functioning properly, and we’re focusing on ensuring
               │   CPDO DEFAULTS      │
               │  Investors Lose $$$  │
               └──────────────────────┘
+
+
+
+a relationship between spread and intensity
+plug in spread and obtain lamda
